@@ -1,0 +1,145 @@
+.mainFooter
+
+	background: $gray-100
+	padding-top: 20px
+
+	&Row
+
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+
+	&Logo
+
+		width: 100%
+		text-align: center
+		margin-bottom: 20px
+
+		img
+
+			display: inline-block
+
+	&List
+
+		width: 50%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+		&Title
+
+			color: #a4acb4
+			margin-bottom: 15px
+			display: block
+			text-transform: uppercase
+
+		a
+
+			color: $white
+
+			&:hover
+
+				color: darken($white, 15%)
+
+	&Form
+
+		width: 100%
+		padding-top: 20px
+		margin-bottom: 30px
+
+		&Title
+
+			color: #a4acb4
+			margin-bottom: 15px
+
+		&Control
+
+			width: 100%
+			position: relative
+			z-index: 1
+
+			input
+
+				height: 56px
+				width: 100%
+				border: 1px solid #a4acb4
+				background: transparent
+				color: #a4acb4
+				padding-left: 12px
+				padding-right: 46px
+
+				&:focus
+
+					box-shadow: 0 0 2px 0 #a4acb4
+
+				&::placeholder
+
+					color: #a4acb4
+
+		&Submit
+
+			position: absolute
+			top: 1px
+			right: 1px
+			width: 46px
+			height: 54px
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMxLjQ5IDMxLjQ5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMS40OSAzMS40OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+PHBhdGggZD0iTTIxLjIwNSw1LjAwN2MtMC40MjktMC40NDQtMS4xNDMtMC40NDQtMS41ODcsMGMtMC40MjksMC40MjktMC40MjksMS4xNDMsMCwxLjU3MWw4LjA0Nyw4LjA0N0gxLjExMSAgQzAuNDkyLDE0LjYyNiwwLDE1LjExOCwwLDE1LjczN2MwLDAuNjE5LDAuNDkyLDEuMTI3LDEuMTExLDEuMTI3aDI2LjU1NGwtOC4wNDcsOC4wMzJjLTAuNDI5LDAuNDQ0LTAuNDI5LDEuMTU5LDAsMS41ODcgIGMwLjQ0NCwwLjQ0NCwxLjE1OSwwLjQ0NCwxLjU4NywwbDkuOTUyLTkuOTUyYzAuNDQ0LTAuNDI5LDAuNDQ0LTEuMTQzLDAtMS41NzFMMjEuMjA1LDUuMDA3eiIgZmlsbD0iI2E0YWNiNCIvPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==) no-repeat 50% 50%
+			display: block
+			background-size: 40%
+
+	&SocialList
+
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		padding-bottom: 40px
+
+		li
+
+			margin: 0 10px
+
+			a
+
+				display: inline-block
+				width: 24px
+				height: 24px
+				color: $white
+				font-size: 18px
+
+				&:hover
+
+					color: darken($white, 15%)
+
+				&.icon-inst
+
+					&:after
+
+						content: '\f32d'
+						font-family: $icon-font-family
+
+				&.icon-fb
+
+					&:after
+
+						content: '\f30c'
+						font-family: $icon-font-family
+
+				&.icon-twit
+
+					&:after
+
+						content: '\f099'
+						font-family: $icon-font-family
+

@@ -1,0 +1,45 @@
+.mainSlider
+
+	position: relative
+	z-index: 1
+	padding-bottom: 48px
+	background: url('../img/sliderBg.png') no-repeat 20% 40%
+
+	&Item
+
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding-bottom: 35px
+
+		&Img
+
+			text-align: center
+			width: 250px
+			margin: 0 auto
+
+			img
+
+				max-width: 100%
+				display: inline-block
+				vertical-align: middle
+
+		&Info
+
+			text-align: center
+
+		&Text
+
+			font-size: 32px
+			line-height: 40px
+			text-transform: uppercase
+			color: $gray-100
+			margin-bottom: 25px
+
+		&Btn
+
+			@include btn

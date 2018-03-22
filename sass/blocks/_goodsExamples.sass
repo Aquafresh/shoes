@@ -1,0 +1,73 @@
+.goodsExamples
+
+	background: $gray-200
+	padding-top: 20px
+
+	&Row
+
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+
+	&Title
+
+		font-size: 32px
+		line-height: 40px
+		text-align: center
+		color: $gray-100
+		margin-bottom: 35px
+		width: 100%
+
+	&Item
+
+		width: 50%
+		text-align: center
+		margin-bottom: 55px
+		min-width: 260px
+
+		&Img
+
+			width: 250px
+			height: 130px
+			margin: 0 auto
+			margin-bottom: 40px
+
+		&Btn
+
+			@include btn
+			text-align: center
+
+			&:hover
+
+				&:after,
+				&:before
+
+					color: $white
+
+			&:before,
+			&:after
+
+				content: ''
+				font-family: $icon-font-family
+				color: $gray-100
+				display: inline-block
+				vertical-align: middle
+
+			&Men
+
+				&:before
+
+					content: '\f177'
+					margin-right: 20px
+
+			&Kids
+
+				&:after
+
+					content: '\f178'
+					margin-left: 20px

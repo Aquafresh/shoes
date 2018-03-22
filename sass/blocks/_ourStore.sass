@@ -1,0 +1,65 @@
+.ourStore
+
+	padding-top: 20px
+
+	&Row
+
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+
+	&Title
+
+		font-size: 32px
+		line-height: 40px
+		text-align: center
+		color: $gray-100
+		margin-bottom: 35px
+
+	&Info
+
+		margin-bottom: 20px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+
+		&Row
+
+			width: 50%
+			min-width: 260px
+
+		&Title
+
+			font-size: 20px
+			line-height: 28px
+			color: $gray
+			margin-bottom: 18px
+
+		&Caption
+
+			font-weight: bold
+			margin-bottom: 4px
+
+		&Phone
+
+			margin: 15px 0
+			display: block
+
+			&:before
+
+				content: '\e81b'
+				font-family: $icon-font-family
+				display: inline-block
+				vertical-align: middle
+				color: $gray
+				margin-right: 10px
+
+	&Img
+
+		padding-bottom: 15px

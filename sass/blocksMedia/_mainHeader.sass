@@ -1,0 +1,126 @@
+@media (min-width: $grid-breakpoints-md)
+
+	.mainHeader
+
+		background-color: red
+
+		&Top
+
+			&Row
+
+				justify-content: space-between
+				flex-direction: row
+
+		&Logo,
+		&UserArea
+
+			width: auto
+
+		&Logo
+
+			margin-bottom: 10px
+
+		&UserArea
+
+			margin-bottom: 0px
+			flex-direction: row
+			align-items: flex-start
+			margin-top: 4px
+
+			&Cart
+
+				margin-left: 60px
+
+		&Search
+
+			&Result
+
+				width: 560px
+
+@media (min-width: $grid-breakpoints-lg)
+
+	.mainHeader
+
+		&Bottom
+
+			&Row
+
+				align-items: center
+
+		&Search
+
+			width: 10%
+
+			&Btn
+
+				margin-left: auto
+
+		&Nav
+
+			width: 90%
+
+			&Mobile
+
+				display: none
+
+			&List
+
+				display: -webkit-flex !important
+				display: -moz-flex !important
+				display: -ms-flex !important
+				display: -o-flex !important
+				display: flex !important
+				position: relative
+				width: 100%
+				box-shadow: none
+				flex-wrap: nowrap
+				justify-content: space-between
+				flex-direction: row
+				align-items: center
+				top: 0
+				padding: 0
+
+				li
+
+					width: auto
+					argin-right: 5%
+					margin-bottom: 0
+
+					&.mainHeaderNavListBtn
+
+						margin-top: 0
+						margin-bottom: 0
+
+					a
+
+						min-width: auto
+
+					&:nth-child(3)
+
+						border-bottom: none
+						padding-bottom: 0px
+
+					&:nth-child(3) ~ li
+
+						margin-bottom: 0
+
+
+				li.mainHeaderNavListItemImg
+
+					a
+
+						font-size: 0
+						width: 50px
+						min-width: 50px
+						padding-right: 0
+
+						img
+
+							position: absolute
+							top: auto
+							right: 0
+							bottom: 0
+							left: 0
+							margin: 0 auto
+							display: block
+							transform: translateX(0%)

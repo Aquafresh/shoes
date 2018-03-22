@@ -1,0 +1,108 @@
+@-ms-viewport
+  width: device-width
+
+
+html
+  box-sizing: border-box
+  -ms-overflow-style: scrollbar
+
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+
+
+html,
+body
+
+	height: 100%
+	min-width: $min-width
+	font-family: $custom-font-family
+	font-size: $body-font-size
+	line-height: $body-line-height
+
+*
+	box-sizing: border-box
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p
+
+	padding: 0
+	margin: 0
+
+p
+
+	margin-bottom: $default-paragraph-margin
+
+ul,
+ol
+
+	list-style: none
+
+a,
+a:hover,
+a:focus,
+a:active
+
+	text-decoration: none
+	outline: none
+	color: inherit
+
+
+
+img
+  vertical-align: middle
+  border-style: none
+
+
+svg:not(:root)
+  overflow: hidden
+
+
+table
+  border-collapse: collapse
+
+
+#pw
+
+	position: relative
+	min-height: 100%
+	transition: none
+
+.mainContent,
+.mainFooter
+
+	position: relative
+	z-index: 1
+
+.debugger
+
+	outline: 1px solid red
+
+.opacityShow
+
+	opacity: 1
+
+.opacityHide
+
+	opacity: 0
+
+.hide
+
+	display: none
+
+.container
+
+	utline: 1px solid red
+
+img
+
+	max-width: 100%
